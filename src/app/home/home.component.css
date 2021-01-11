@@ -1,0 +1,30 @@
+.card
+{
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+.cc
+{
+    float: left;
+    padding: 5px;
+}
+img{
+    width: 200px; 
+    height: auto;
+}
+
+div p{
+    text-align: center;
+}
+
+.backmain {
+    background-color: #f1f3f6;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }

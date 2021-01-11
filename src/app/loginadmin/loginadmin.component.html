@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+<form #adminlogForm="ngForm" (ngSubmit)=loginAdmin() autocomplete="on">
+    <div>
+        <label>Admin email:</label>
+        <input type="text" name="adminEmail" required [(ngModel)]=admin.adminEmail><br />
+    </div>
+    <div>
+        <label>Admin email:</label>
+        <input type="password" name="adminPassword" required [(ngModel)]=admin.adminPassword><br />
+    </div>
+    <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
+<a [routerLink]="['/registeradmin']">click here to signup</a>
